@@ -343,12 +343,12 @@ result of call is: None
 > Please re-write the code so that the if-block is folded into a function.
 >
 > ~~~
->  import random
->  for i in range(10):
+> import random
+> for i in range(10):
 >
 >     # simulating the mass of a chicken egg
 >     # the (random) mass will be 70 +/- 20 grams
->     mass = 70 + 20.0 * (2.0 * random.random() -1.0)
+>     mass = 70 + 20.0 * (2.0 * random.random() - 1.0)
 >
 >     print(mass)
 >    
@@ -368,13 +368,13 @@ result of call is: None
 > The simplified program follows.  What function definition will make it functional?
 >
 > ~~~
->  # revised version
->  import random
->  for i in range(10):
+> # revised version
+> import random
+> for i in range(10):
 >
 >     # simulating the mass of a chicken egg
 >     # the (random) mass will be 70 +/- 20 grams
->     mass = 70 + 20.0 * (2.0 * random.random() -1.0)
+>     mass = 70 + 20.0 * (2.0 * random.random() - 1.0)
 >
 >     print(mass, print_egg_label(mass))    
 >
