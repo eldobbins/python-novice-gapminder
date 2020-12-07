@@ -335,9 +335,10 @@ result of call is: None
 > {: .solution}
 {: .challenge}
 
-> ## Encapsulate of If/Print Block
+> ## Encapsulation of an If/Print Block
 >
-> The code below will run on a label-printer for chicken eggs.  A digital scale will report a chicken egg mass (in grams) to the computer and then the computer will print a label.  
+> The code below will run on a label-printer for chicken eggs.  A digital scale will report a chicken egg mass (in grams) 
+> to the computer and then the computer will print a label.  
 >
 > Please re-write the code so that the if-block is folded into a function.
 >
@@ -347,16 +348,16 @@ result of call is: None
 >
 >     # simulating the mass of a chicken egg
 >     # the (random) mass will be 70 +/- 20 grams
->     mass=70+20.0*(2.0*random.random()-1.0)
+>     mass = 70 + 20.0 * (2.0 * random.random() -1.0)
 >
 >     print(mass)
 >    
->     #egg sizing machinery prints a label
->     if(mass>=85):
+>     # egg sizing machinery prints a label
+>     if mass >= 85:
 >        print("jumbo")
->     elif(mass>=70):
+>     elif mass >= 70:
 >        print("large")
->     elif(mass<70 and mass>=55):
+>     elif mass < 70 and mass >= 55:
 >        print("medium")
 >     else:
 >        print("small")
@@ -364,7 +365,7 @@ result of call is: None
 > {: .language-python}
 >
 >
-> The simplified program  follows.  What function definition will make it functional?
+> The simplified program follows.  What function definition will make it functional?
 >
 > ~~~
 >  # revised version
@@ -373,9 +374,9 @@ result of call is: None
 >
 >     # simulating the mass of a chicken egg
 >     # the (random) mass will be 70 +/- 20 grams
->     mass=70+20.0*(2.0*random.random()-1.0)
+>     mass = 70 + 20.0 * (2.0 * random.random() -1.0)
 >
->     print(mass,print_egg_label(mass))    
+>     print(mass, print_egg_label(mass))    
 >
 > ~~~
 > {: .language-python}
@@ -389,15 +390,15 @@ result of call is: None
 > > ~~~
 > > def print_egg_label(mass):
 > >     #egg sizing machinery prints a label
-> >     if(mass>=90):
+> >     if mass >= 90:
 > >         return "warning: egg might be dirty"
-> >     elif(mass>=85):
+> >     elif mass >= 85:
 > >         return "jumbo"
-> >     elif(mass>=70):
+> >     elif mass >= 70:
 > >         return "large"
-> >     elif(mass<70 and mass>=55):
+> >     elif mass < 70 and mass >= 55:
 > >         return "medium"
-> >     elif(mass<50):
+> >     elif mass < 50:
 > >         return "too light, probably spoiled"
 > >     else:
 > >         return "small"
