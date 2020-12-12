@@ -201,7 +201,7 @@ result of call is: None
 
 > ## Order of Operations
 >
-> 1. What's wrong in this example?
+> &nbsp;1. What's wrong in this example?
 >
 > ~~~
 > result = print_date(1871,3,19)
@@ -212,7 +212,7 @@ result of call is: None
 > ~~~
 > {: .language-python}
 > 
-> 2. After fixing print_date(), explain why running this example code:
+> &nbsp;2. After fixing the problem above, explain why running this example code:
 >
 > ~~~
 > result = print_date(1871, 3, 19)
@@ -220,7 +220,7 @@ result of call is: None
 > ~~~
 > {: .language-python}
 >
-> gives this output?
+> gives this output:
 >
 > ~~~
 > 1871/3/19
@@ -228,7 +228,7 @@ result of call is: None
 > ~~~
 > {: .output}
 >
-> 3. Why is the result of the call `None`?
+> &nbsp;3. Why is the result of the call `None`?
 >
 > > ## Solution
 > > 
