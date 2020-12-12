@@ -202,6 +202,7 @@ result of call is: None
 > ## Order of Operations
 >
 > 1. What's wrong in this example?
+>
 > ~~~
 > result = print_date(1871,3,19)
 >
@@ -220,6 +221,7 @@ result of call is: None
 > {: .language-python}
 >
 > gives this output?
+>
 > ~~~
 > 1871/3/19
 > result of call is: None
