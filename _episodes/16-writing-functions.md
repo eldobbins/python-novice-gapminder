@@ -202,29 +202,31 @@ result of call is: None
 > ## Order of Operations
 >
 > 1. What's wrong in this example?
-> ~~~
-> result = print_date(1871,3,19)
 >
-> def print_date(year, month, day):
->    joined = str(year) + '/' + str(month) + '/' + str(day)
->    print(joined)
-> ~~~
-> {: .language-python}
+>     ~~~
+>     result = print_date(1871,3,19)
+>
+>     def print_date(year, month, day):
+>        joined = str(year) + '/' + str(month) + '/' + str(day)
+>        print(joined)
+>     ~~~
+>     {: .language-python}
 > 
-> 2. After fixing print_date(), explain why running this example code:
+> 2. After fixing the problem above, explain why running this example code:
 >
-> ~~~
-> result = print_date(1871, 3, 19)
-> print('result of call is:', result)
-> ~~~
-> {: .language-python}
+>     ~~~
+>     result = print_date(1871, 3, 19)
+>     print('result of call is:', result)
+>     ~~~
+>     {: .language-python}
 >
-> gives this output?
-> ~~~
-> 1871/3/19
-> result of call is: None
-> ~~~
-> {: .output}
+>     gives this output:
+>
+>     ~~~
+>     1871/3/19
+>     result of call is: None
+>     ~~~
+>     {: .output}
 >
 > 3. Why is the result of the call `None`?
 >
