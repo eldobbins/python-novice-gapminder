@@ -198,7 +198,6 @@ result of call is: None
 > {: .solution}
 {: .challenge}
 
-
 > ## Order of Operations
 >
 > 1. What's wrong in this example?
